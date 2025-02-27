@@ -63,7 +63,7 @@ export const useAuthStore = create((set, get) => ({
 
             get().connectSocket();
         } catch (error) {
-            toast.error("Something went wrong");
+            toast.error("Invalid credentials");
         } finally {
             set({isLoggingIn : false});
         }
